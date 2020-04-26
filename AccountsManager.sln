@@ -1,7 +1,60 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "src\Domain\Domain.csproj", "{D9C2056A-AA5A-4F44-8564-7CDF9141B33F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "src\Back\Domain\Domain.csproj", "{D9C2056A-AA5A-4F44-8564-7CDF9141B33F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1E2D3354-E878-4ADE-B5D6-FD0C41A8F924}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+		k8s-deploy.yml = k8s-deploy.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Back", "Back", "{DB5A493E-5830-4621-810D-FF24A89D4240}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Front", "Front", "{704C6B0C-F877-424C-A424-2D41D6B65C5E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi", "src\Back\WebApi\WebApi.csproj", "{7A6E6498-304B-408D-847A-FAE01EA4A9F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App", "src\Back\App\App.csproj", "{68F806AA-3904-4B96-A4DA-E4CA1E0597B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infra", "src\Back\Infra\Infra.csproj", "{28323BA7-8FD8-4DA3-B7B4-231918722333}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebApp", "WebApp", "{94F8CFB1-6686-4329-A2C0-122295FE1847}"
+	ProjectSection(SolutionItems) = preProject
+		src\Front\WebApp\Dockerfile = src\Front\WebApp\Dockerfile
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Views", "Views", "{C124C406-22EF-4F39-B57E-CA34E13E3BF5}"
+	ProjectSection(SolutionItems) = preProject
+		src\Front\WebApp\Views\package.json = src\Front\WebApp\Views\package.json
+		src\Front\WebApp\Views\README.md = src\Front\WebApp\Views\README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "public", "public", "{BADB1415-F16E-4DC0-B5BE-E642110F3C40}"
+	ProjectSection(SolutionItems) = preProject
+		src\Front\WebApp\Views\public\favicon.ico = src\Front\WebApp\Views\public\favicon.ico
+		src\Front\WebApp\Views\public\index.html = src\Front\WebApp\Views\public\index.html
+		src\Front\WebApp\Views\public\manifest.json = src\Front\WebApp\Views\public\manifest.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{65C2F6C6-CCCB-48AE-86E2-39BE93AA1221}"
+	ProjectSection(SolutionItems) = preProject
+		src\Front\WebApp\Views\src\App.js = src\Front\WebApp\Views\src\App.js
+		src\Front\WebApp\Views\src\App.test.js = src\Front\WebApp\Views\src\App.test.js
+		src\Front\WebApp\Views\src\custom.css = src\Front\WebApp\Views\src\custom.css
+		src\Front\WebApp\Views\src\index.js = src\Front\WebApp\Views\src\index.js
+		src\Front\WebApp\Views\src\registerServiceWorker.js = src\Front\WebApp\Views\src\registerServiceWorker.js
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "components", "components", "{E571DDAB-B471-41CA-9209-74676E4E2D70}"
+	ProjectSection(SolutionItems) = preProject
+		src\Front\WebApp\Views\src\components\Counter.js = src\Front\WebApp\Views\src\components\Counter.js
+		src\Front\WebApp\Views\src\components\FetchData.js = src\Front\WebApp\Views\src\components\FetchData.js
+		src\Front\WebApp\Views\src\components\Home.js = src\Front\WebApp\Views\src\components\Home.js
+		src\Front\WebApp\Views\src\components\Layout.js = src\Front\WebApp\Views\src\components\Layout.js
+		src\Front\WebApp\Views\src\components\NavMenu.css = src\Front\WebApp\Views\src\components\NavMenu.css
+		src\Front\WebApp\Views\src\components\NavMenu.js = src\Front\WebApp\Views\src\components\NavMenu.js
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,5 +66,28 @@ Global
 		{D9C2056A-AA5A-4F44-8564-7CDF9141B33F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D9C2056A-AA5A-4F44-8564-7CDF9141B33F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D9C2056A-AA5A-4F44-8564-7CDF9141B33F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A6E6498-304B-408D-847A-FAE01EA4A9F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A6E6498-304B-408D-847A-FAE01EA4A9F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A6E6498-304B-408D-847A-FAE01EA4A9F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A6E6498-304B-408D-847A-FAE01EA4A9F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68F806AA-3904-4B96-A4DA-E4CA1E0597B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68F806AA-3904-4B96-A4DA-E4CA1E0597B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68F806AA-3904-4B96-A4DA-E4CA1E0597B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68F806AA-3904-4B96-A4DA-E4CA1E0597B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28323BA7-8FD8-4DA3-B7B4-231918722333}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28323BA7-8FD8-4DA3-B7B4-231918722333}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28323BA7-8FD8-4DA3-B7B4-231918722333}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28323BA7-8FD8-4DA3-B7B4-231918722333}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7A6E6498-304B-408D-847A-FAE01EA4A9F8} = {DB5A493E-5830-4621-810D-FF24A89D4240}
+		{D9C2056A-AA5A-4F44-8564-7CDF9141B33F} = {DB5A493E-5830-4621-810D-FF24A89D4240}
+		{68F806AA-3904-4B96-A4DA-E4CA1E0597B6} = {DB5A493E-5830-4621-810D-FF24A89D4240}
+		{28323BA7-8FD8-4DA3-B7B4-231918722333} = {DB5A493E-5830-4621-810D-FF24A89D4240}
+		{94F8CFB1-6686-4329-A2C0-122295FE1847} = {704C6B0C-F877-424C-A424-2D41D6B65C5E}
+		{C124C406-22EF-4F39-B57E-CA34E13E3BF5} = {94F8CFB1-6686-4329-A2C0-122295FE1847}
+		{BADB1415-F16E-4DC0-B5BE-E642110F3C40} = {C124C406-22EF-4F39-B57E-CA34E13E3BF5}
+		{65C2F6C6-CCCB-48AE-86E2-39BE93AA1221} = {C124C406-22EF-4F39-B57E-CA34E13E3BF5}
+		{E571DDAB-B471-41CA-9209-74676E4E2D70} = {65C2F6C6-CCCB-48AE-86E2-39BE93AA1221}
 	EndGlobalSection
 EndGlobal
